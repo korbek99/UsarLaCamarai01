@@ -8,18 +8,40 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    //PROPIEDAD CONECTADA CON MI IMAGEN DEL STORYBOARD
+    @IBOutlet var imageView: UIImageView!
+    
+    //VARIABLE A LA CLASE UIImagePickerController
+    var miControladorImagen: UIImagePickerController!
+    
+    @IBAction func takePhoto(sender: UIButton) {
+        
+        //COMPROBAMOS SI EL DISPOSITIVO TIENE CÁMARA
+        if (UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera)){
+        miControladorImagen =  UIImagePickerController()
+        miControladorImagen.delegate = self
+        miControladorImagen.sourceType = .Camera
+        
+        presentViewController(miControladorImagen, animated: true, completion: nil)
+        }else{
+            
+            print ("No hay cámara")
+            
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        
+        var guardaImagen: UIImage!
+        
+        miControladorImagen.dismissViewControllerAnimated(true, completion: nil)
+        imageView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        guardaImagen = info[UIImagePickerControllerOriginalImage] as? UIImage
+        
+        UIImageWriteToSavedPhotosAlbum(guardaImagen, nil, nil, nil);
     }
-
-
+    
 }
 

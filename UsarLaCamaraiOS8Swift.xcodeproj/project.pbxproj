@@ -156,6 +156,8 @@
 		E21433C71A8A251300A623F5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Sergio Becerril";
 				TargetAttributes = {
@@ -405,6 +407,7 @@
 				E21433F01A8A251300A623F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E21433F11A8A251300A623F5 /* Build configuration list for PBXNativeTarget "UsarLaCamaraiOS8SwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +416,7 @@
 				E21433F31A8A251300A623F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
