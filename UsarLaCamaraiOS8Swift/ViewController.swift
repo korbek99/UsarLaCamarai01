@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  UsarLaCamaraiOS8Swift
 //
-//  Created by Sergio Becerril on 10/2/15.
-//  Copyright (c) 2015 Sergio Becerril. All rights reserved.
+//  Created by Jose David Bustos H on 21-01-17.
+//  Copyright © 2017 Jose David Bustos H. All rights reserved.
 //
 
 import UIKit
@@ -16,15 +16,15 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     //VARIABLE A LA CLASE UIImagePickerController
     var miControladorImagen: UIImagePickerController!
     
-    @IBAction func takePhoto(sender: UIButton) {
+    @IBAction func takePhoto(_ sender: UIButton) {
         
         //COMPROBAMOS SI EL DISPOSITIVO TIENE CÁMARA
-        if (UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera)){
+        if (UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera)){
         miControladorImagen =  UIImagePickerController()
         miControladorImagen.delegate = self
-        miControladorImagen.sourceType = .Camera
+        miControladorImagen.sourceType = .camera
         
-        presentViewController(miControladorImagen, animated: true, completion: nil)
+        present(miControladorImagen, animated: true, completion: nil)
         }else{
             
             print ("No hay cámara")
@@ -32,11 +32,11 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         }
     }
     
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         
         var guardaImagen: UIImage!
         
-        miControladorImagen.dismissViewControllerAnimated(true, completion: nil)
+        miControladorImagen.dismiss(animated: true, completion: nil)
         imageView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
         guardaImagen = info[UIImagePickerControllerOriginalImage] as? UIImage
         

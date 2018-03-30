@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5796802F206EEBA3001A26FB /* 0021_BotonMovi.png in Resources */ = {isa = PBXBuildFile; fileRef = 5796802E206EEBA3001A26FB /* 0021_BotonMovi.png */; };
+		57968031206EED37001A26FB /* photoWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = 57968030206EED37001A26FB /* photoWhite.png */; };
 		E21433D51A8A251300A623F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21433D41A8A251300A623F5 /* AppDelegate.swift */; };
 		E21433D71A8A251300A623F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21433D61A8A251300A623F5 /* ViewController.swift */; };
 		E21433DA1A8A251300A623F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E21433D81A8A251300A623F5 /* Main.storyboard */; };
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5796802E206EEBA3001A26FB /* 0021_BotonMovi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0021_BotonMovi.png; sourceTree = "<group>"; };
+		57968030206EED37001A26FB /* photoWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photoWhite.png; sourceTree = "<group>"; };
 		E21433CF1A8A251300A623F5 /* UsarLaCamaraiOS8Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UsarLaCamaraiOS8Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E21433D31A8A251300A623F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E21433D41A8A251300A623F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,9 +60,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5796802D206EEB87001A26FB /* img */ = {
+			isa = PBXGroup;
+			children = (
+				5796802E206EEBA3001A26FB /* 0021_BotonMovi.png */,
+				57968030206EED37001A26FB /* photoWhite.png */,
+			);
+			name = img;
+			sourceTree = "<group>";
+		};
 		E21433C61A8A251300A623F5 = {
 			isa = PBXGroup;
 			children = (
+				5796802D206EEB87001A26FB /* img */,
 				E21433D11A8A251300A623F5 /* UsarLaCamaraiOS8Swift */,
 				E21433E71A8A251300A623F5 /* UsarLaCamaraiOS8SwiftTests */,
 				E21433D01A8A251300A623F5 /* Products */,
@@ -163,9 +177,12 @@
 				TargetAttributes = {
 					E21433CE1A8A251300A623F5 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 828LF57WA4;
+						LastSwiftMigration = 0830;
 					};
 					E21433E31A8A251300A623F5 = {
 						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 0830;
 						TestTargetID = E21433CE1A8A251300A623F5;
 					};
 				};
@@ -194,9 +211,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5796802F206EEBA3001A26FB /* 0021_BotonMovi.png in Resources */,
 				E21433DA1A8A251300A623F5 /* Main.storyboard in Resources */,
 				E21433DF1A8A251300A623F5 /* LaunchScreen.xib in Resources */,
 				E21433DC1A8A251300A623F5 /* Images.xcassets in Resources */,
+				57968031206EED37001A26FB /* photoWhite.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,9 +357,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 828LF57WA4;
 				INFOPLIST_FILE = UsarLaCamaraiOS8Swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -348,9 +369,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 828LF57WA4;
 				INFOPLIST_FILE = UsarLaCamaraiOS8Swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -369,6 +392,7 @@
 				INFOPLIST_FILE = UsarLaCamaraiOS8SwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UsarLaCamaraiOS8Swift.app/UsarLaCamaraiOS8Swift";
 			};
 			name = Debug;
@@ -384,6 +408,7 @@
 				INFOPLIST_FILE = UsarLaCamaraiOS8SwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UsarLaCamaraiOS8Swift.app/UsarLaCamaraiOS8Swift";
 			};
 			name = Release;
